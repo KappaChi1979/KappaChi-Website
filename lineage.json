@@ -1,5 +1,153 @@
 [
   {
+    "line": "Lone Survivor",
+    "date": "Spring 25",
+    "image": "",
+    "members": [
+    {
+      "lineName": "Solo Revenant",
+      "name": "Dre Robinson"
+    }
+    ]
+  },  
+  {
+    "line": "The Netrunners",
+    "date": "Spring 24",
+    "image": "",
+    "members": [
+    {
+      "lineName": "Ghost",
+      "name": "Chris Turner"
+    },
+    {
+      "lineName": "The Lotus",
+      "name": "Anthony Toms"
+    },
+     {
+      "lineName": "Doomsday",
+      "name": "San Mirza"
+    },
+     {
+      "lineName": "Ares",
+      "name": "Kevin Aimua"
+    }
+    ]
+  },  
+  {
+    "line": "The Secret Service",
+    "date": "Fall 23",
+    "image": "",
+    "members": [
+    {
+      "lineName": "Storm Bringer",
+      "name": "Dalen Gary"
+    },
+    {
+      "lineName": "The Silencer",
+      "name": "Dylan Woods"
+    }
+    ]
+  },  
+  {
+    "line": "The Mafia",
+    "date": "Spring 23",
+    "image": "",
+    "members": [
+    {
+      "lineName": "Annihilation",
+      "name":""
+    },
+    {
+      "lineName": "Destruction",
+      "name": ""
+    },
+    {
+      "lineName": "Catastrophe",
+      "name": ""
+    }
+    ]
+  },  
+  {
+    "line": "The Asylum",
+    "date": "Spring 22",
+    "image": "",
+    "members": [
+    {
+      "lineName": "Silent Hitta",
+      "name":"Elijah Watley"
+    },
+    {
+      "lineName": "The Joker Nutz",
+      "name": "Steven"
+    },
+    {
+      "lineName": "Shatterproof",
+      "name": "Jordan"
+    },
+    {
+      "lineName": "RockSolid Balls",
+      "name": "Chris Ponytheris"
+    }
+    ]
+  },  
+  {
+    "line": "Three Kings of Disaster",
+    "date": "Fall 22",
+    "image": "",
+    "members": [
+    {
+      "lineName": "Annihilation",
+      "name":""
+    },
+    {
+      "lineName": "Destruction",
+      "name": ""
+    },
+    {
+      "lineName": "Catastrophe",
+      "name": ""
+    }
+    ]
+  },  
+  {
+    "line": "The Assasins",
+    "date": "Fall 21",
+    "image": "",
+    "members": [
+    {
+      "lineName": "Cut Throat",
+      "name":""
+    },
+    {
+      "lineName": "ΣharpΣhooter",
+      "name": ""
+    }
+    ]
+  },
+  {
+    "line": "The Guardians",
+    "date": "Fall 19",
+    "image": "",
+    "members": [
+    {
+      "lineName": "Σwordsman",
+      "name":""
+    },
+    {
+      "lineName": "BeaΣt",
+      "name": ""
+    },
+    {
+      "lineName": "Σeargeant",
+      "name": "Jakevious Rousser"
+    },
+    {
+      "lineName": "AfterΣhock",
+      "name": "Hunter Man"
+    }
+    ]
+  },
+  {
     "line": "The Resurgence",
     "date": "Fall 18",
     "image": "",
