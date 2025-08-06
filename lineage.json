@@ -1,49 +1,49 @@
 [
   {
-    "line": "Lone Survivor",
+    "line": "Lone Σurvivor",
     "date": "Spr 25",
     "image": "",
     "members": [
     {
-      "lineName": "Solo Revenant",
+      "lineName": "Σolo Revenant",
       "name": "Dre Robinson"
     }
     ]
   },  
   {
-    "line": "The Netrunners",
+    "line": "The NetrunnerΣ",
     "date": "Spr 24",
     "image": "",
     "members": [
     {
-      "lineName": "Ghost",
+      "lineName": "GhoΣt",
       "name": "Chris Turner"
     },
     {
-      "lineName": "The Lotus",
+      "lineName": "The LotuΣ",
       "name": "Anthony Toms"
     },
      {
-      "lineName": "Doomsday",
+      "lineName": "DoomΣday",
       "name": "San Mirza"
     },
      {
-      "lineName": "Ares",
+      "lineName": "AreΣ",
       "name": "Kevin Aimua"
     }
     ]
   },  
   {
-    "line": "The Secret Service",
+    "line": "The Σecret Σervice",
     "date": "Fall 23",
     "image": "",
     "members": [
     {
-      "lineName": "Storm Bringer",
+      "lineName": "Σtorm Bringer",
       "name": "Dalen Gary"
     },
     {
-      "lineName": "The Silencer",
+      "lineName": "The Σilencer",
       "name": "Dylan Woods"
     }
     ]
@@ -54,11 +54,11 @@
     "image": "",
     "members": [
     {
-      "lineName": "MAB Ties",
+      "lineName": "MAB TieΣ",
       "name":"Jalin Wilson"
     },
     {
-      "lineName": "Notorious Wonder",
+      "lineName": "NotoriouΣ Wonder",
       "name": "Jerrin Lowe"
     },
     {
@@ -67,29 +67,29 @@
     },
     {
       "lineName": "Cordney Nash",
-      "name": "Chaos"
+      "name": "ChaoΣ"
     },
     {
       "lineName": "Julian McCoy",
-      "name": "Smooth Criminal"
+      "name": "Σmooth Criminal"
     },
     {
       "lineName": "Alvin Robertson",
-      "name": "Villainous"
+      "name": "VillainouΣ"
     },
     {
-      "lineName": "Bloodlust",
+      "lineName": "BloodluΣt",
       "name": "Carson Broughton"
     }
     ]
   },  
   {
-    "line": "The Asylum",
+    "line": "The AΣylum",
     "date": "Spr 22",
     "image": "",
     "members": [
     {
-      "lineName": "Silent Hitta",
+      "lineName": "Σilent Hitta",
       "name":"Elijah Watley"
     },
     {
@@ -97,11 +97,11 @@
       "name": "Steven"
     },
     {
-      "lineName": "Shatterproof",
+      "lineName": "Σhatterproof",
       "name": "Jordan"
     },
     {
-      "lineName": "RockSolid",
+      "lineName": "RockΣolid",
       "name": "Chris Ponytheris"
     }
     ]
@@ -113,7 +113,7 @@
     "members": [
     {
       "lineName": "Annihilation",
-      "name":""
+      "name":"Chase Woodard"
     },
     {
       "lineName": "Destruction",
@@ -121,7 +121,7 @@
     },
     {
       "lineName": "Catastrophe",
-      "name": ""
+      "name": "Reginald Johnson"
     }
     ]
   },  
