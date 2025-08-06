@@ -1,0 +1,17 @@
+.image-container img {
+    /* Basic sizing */
+    width: 30%;
+    max-width: 30px;
+    height: auto; /* Maintains aspect ratio */
+    
+    /* Border and shadow */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Spacing */
+    margin: 20px 0;
+    
+    /* Display */
+    display: block;
+}
