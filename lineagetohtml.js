@@ -41,11 +41,12 @@ const footer = `
             <figure class="col-sm-6 footer_left">
 
               <ul class="footer_nav">
-                <li> <a href="../">Home </a> </li>
-                <li> <a href="../fraternity"> Fraternity </a> </li>
-                <li> <a href="../chapter">  Chapter </a> </li>
-                <li> <a href="../programs"> Programs </a> </li>
-                <li> <a href="../membership"> Join</a> </li>
+                <li><a href="/~kappachi/index.html">Home<span class="sr-only">(current)</span></a></li>
+                <li><a href="/~kappachi/fraternity/index.html">The Fraternity<span class="sr-only"></span></a></li>
+                <li><a href="/~kappachi/chapter/index.html">The Chapter<span class="sr-only"></span></a></li>
+                <li><a href="/~kappachi/programs/index.html">Programs</a></li>
+                <li><a href="index">Lineage</a></li>
+                <li><a href="/~kappachi/membership/index.html">Membership</a></li>
               </ul>
 
             </figure>
