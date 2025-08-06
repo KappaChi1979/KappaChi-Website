@@ -106,9 +106,119 @@
 
     <section class="container">
       <h1 class="title text-center">Interested In Joining?</h1>
-      <h2 class="text-center">Contact <a href="mailto:kappachi1979@gmail.com">kappachi1979@gmail.com</a></h2>
-    </section>
+      <h2 class="text-center">Fill Out Form Below <br> or <br> Contact <a href="mailto:kappachi1979@gmail.com">kappachi1979@gmail.com</h2>
+      <br>
+      <h3 class="text-center"> </a></h2>
+      <br>
+      <!-- Membership Interest Form -->
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="form-section">
+            <h2 class="section-title">Membership Interest Form</h2>
+            <form role="form" action="/pages/success" method="POST" data-netlify="true">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                  </div>
+                </div>
+              </div>
 
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="memberEmail">Email Address *</label>
+                    <input type="email" class="form-control" id="memberEmail" name="email" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="memberPhone">Phone Number *</label>
+                    <input type="tel" class="form-control" id="memberPhone" name="phone" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="major">Major</label>
+                    <input type="text" class="form-control" id="major" name="major">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="graduationYear">Expected Graduation Year</label>
+                    <select class="form-control" id="graduationYear" name="graduationYear">
+                      <option value="">Select Year</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                      <option value="2029">2029</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Are you currently enrolled as a full-time student? *</label>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="enrollment" value="yes" required>
+                    Yes, full-time
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="enrollment" value="part-time" required>
+                    Part-time
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="enrollment" value="no" required>
+                    No, not currently enrolled
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="gpa">Current GPA</label>
+                <input type="number" class="form-control" id="gpa" name="gpa" min="0" max="4" step="0.01" placeholder="e.g., 3.25">
+              </div>
+
+              <div class="form-group">
+                <label for="whyInterested">Why are you interested in Phi Beta Sigma?</label>
+                <textarea class="form-control" id="whyInterested" name="whyInterested" rows="4" placeholder="Tell us about your interest in joining our fraternity"></textarea>
+              </div>
+
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="terms" required>
+                    I understand that submitting this form does not guarantee membership and that I must meet all eligibility requirements. *
+                  </label>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Submit Interest Form</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
     <section class="container well">
       Attending college is more than a formal education. It's getting along through good times and bad. It's facing new challenges and frustrations. It's discovering your place in a larger world. It's memories indelibly etched in your mind for a lifetime. Phi Beta Sigma can play an important part in making your college experience positive, fulfilling, and rewarding. Phi Beta Sigma nurtures individuality while providing greater opportunities for brotherhood, scholarship, and service. Phi Beta Sigma is continuity. It's yesterday with it's traditions and goals carried on from generations past. It's today as a home away from home and a center for your college activities. It's tomorrow as a creator of friendships and ideals that will last your whole life through. Phi Beta Sigma is an International Fraternity with chapters spread across the United States, U.S. Virgin Islands, Guam, Europe, Africa, Japan, and South Korea. While its members are diverse, they share certain ideals in common. In Phi Beta Sigma brotherhood, scholarship, and service are the significant influences. With genuine brotherhood there develops among men a common cause that brings out there best. With scholarship there comes achievement. And with service to one's fellow man, there is born a unique sense of usefulness that enriches all of life. Remember, the parties and stepshows come and go, but the brotherhood will last a lifetime. Fraternities have personalities. As you would measure an individual, so you should measure a fraternity. Phi Beta Sigma seeks to attract young men of vision and character. Such young men will mold the future of the Fraternity and carry its ideals and principles on to the next generation. Membership in Phi Beta Sigma has been an important part in the lives of over 150,000 men. We hope you will consider the part it can play in your life.
     </section>
