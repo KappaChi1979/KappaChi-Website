@@ -54,16 +54,32 @@
     "image": "",
     "members": [
     {
-      "lineName": "Annihilation",
-      "name":"Chase Woodard"
+      "lineName": "MAB Ties",
+      "name":"Jalin Wilson"
     },
     {
-      "lineName": "Destruction",
-      "name": ""
+      "lineName": "Notorious Wonder",
+      "name": "Jerrin Lowe"
     },
     {
-      "lineName": "Catastrophe",
-      "name": "Reginald Johnson"
+      "lineName": "Jaylon Montgomery",
+      "name": "The Gangsta"
+    },
+    {
+      "lineName": "Cordney Nash",
+      "name": "Chaos"
+    },
+    {
+      "lineName": "Julian McCoy",
+      "name": "Smooth Criminal"
+    },
+    {
+      "lineName": "Alvin Robertson",
+      "name": "Villainous"
+    },
+    {
+      "lineName": "Bloodlust",
+      "name": "Carson Broughton"
     }
     ]
   },  
