@@ -120,7 +120,10 @@ const header = `
 <!--<![endif]-->
 
 <head>
-  <title>Kappa Chi Home Page </title>
+  <title>Lineage | Kappa Chi Chapter</title>
+  <!-- Browser Tab Icon-->
+  <link rel="icon" type="image/png" href="/~kappachi/images/chapter_logo.png">
+  <meta name="description" content="Local chapter of Phi Beta Sigma. Uplifiting the Knoxville community through empowerment and excellence since 1979." >
   <!--[if lt IE 9]>
 	<script src="/~kappachi/js/html5shiv.js"></script>
 <![endif]-->
@@ -173,7 +176,7 @@ const header = `
               <p class="title title-sans center">Phi Beta Sigma Fraternity Inc</p>
             </section>
             <section class="col-sm-4">
-              <img style="width:auto; max-height: 66px" class="center" src="/~kappachi/images/logo.png" alt="Be Human" />
+              <img style="width:auto; max-height: 66px" class="center" src="/~kappachi/images/chapter_logo.png" alt="Be Human" />
             </section>
 
             <section class="hidden-xs col-sm-4 pull-right text-center center">
