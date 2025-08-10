@@ -62,20 +62,20 @@
       "name": "Jerrin Lowe"
     },
     {
-      "lineName": "Jaylon Montgomery",
-      "name": "The Gangsta"
+      "lineName": "The Gangsta",
+      "name":  "Jaylon Montgomery"
     },
     {
-      "lineName": "Cordney Nash",
-      "name": "ChaoΣ"
+      "lineName": "ChaoΣ",
+      "name": "Cordney Nash"
     },
     {
-      "lineName": "Julian McCoy",
-      "name": "Σmooth Criminal"
+      "lineName": "Σmooth Criminal",
+      "name": "Julian McCoy"
     },
     {
-      "lineName": "Alvin Robertson",
-      "name": "VillainouΣ"
+      "lineName": "VillainouΣ",
+      "name": "Alvin Robertson"
     },
     {
       "lineName": "BloodluΣt",
@@ -117,7 +117,7 @@
     },
     {
       "lineName": "Destruction",
-      "name": ""
+      "name": "Rod"
     },
     {
       "lineName": "Catastrophe",
@@ -132,11 +132,11 @@
     "members": [
     {
       "lineName": "Cut Throat",
-      "name":""
+      "name":"PJ Odom"
     },
     {
       "lineName": "ΣharpΣhooter",
-      "name": ""
+      "name": "Anthony Tom"
     }
     ]
   },
