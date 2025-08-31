@@ -147,10 +147,12 @@
       gap: 20px;
       margin-top: 30px;
       flex-wrap: wrap;
+      align-items: center;
     }
     
     .payment-method {
       min-width: 150px;
+      text-align: center;
     }
     
     #paypal-button-container {
@@ -255,6 +257,92 @@
     .category-card h4 {
       color: #1f5490;
       margin-bottom: 15px;
+      text-align: center;
+    }
+    
+    .other-ways-section {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border: 1px solid #dee2e6;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .other-ways-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #1f5490 0%, #2980b9 100%);
+    }
+    
+    .other-ways-item {
+      text-align: center;
+      padding: 25px 15px;
+      background: white;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      border: 1px solid #f1f3f4;
+      position: relative;
+    }
+    
+    .other-ways-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(31, 84, 144, 0.15);
+      border-color: #1f5490;
+    }
+    
+    .other-ways-item i {
+      font-size: 36px;
+      color: #1f5490;
+      margin-bottom: 15px;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    
+    .other-ways-item:hover i {
+      transform: scale(1.1);
+      color: #0d2c5c;
+    }
+    
+    .other-ways-item h5 {
+      color: #1f5490;
+      font-weight: bold;
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+    
+    .other-ways-item p {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+    
+    .contact-info {
+      background: linear-gradient(135deg, #1f5490 0%, #2980b9 100%);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 25px;
+      box-shadow: 0 5px 15px rgba(31, 84, 144, 0.3);
+    }
+    
+    .contact-info a {
+      color: #ffffff;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    
+    .contact-info a:hover {
+      color: #e3f2fd;
+      text-decoration: none;
     }
     
     @media (max-width: 768px) {
@@ -560,26 +648,37 @@
     <div class="container" style="margin: 60px auto;">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <div class="well text-center">
-            <h3 style="color: #1f5490; margin-bottom: 20px;">Other Ways to Give</h3>
+          <div class="other-ways-section">
+            <h3 style="color: #1f5490; margin-bottom: 30px; text-align: center; font-size: 28px; font-weight: bold;">Other Ways to Give</h3>
             <div class="row">
               <div class="col-sm-4">
-                <h5><i class="fa fa-calendar"></i> Monthly Giving</h5>
-                <p>Set up recurring donations to provide steady support</p>
+                <div class="other-ways-item">
+                  <i class="fa fa-calendar"></i>
+                  <h5>Monthly Giving</h5>
+                  <p>Set up recurring donations to provide steady support for our ongoing programs and initiatives</p>
+                </div>
               </div>
               <div class="col-sm-4">
-                <h5><i class="fa fa-briefcase"></i> Corporate Sponsorship</h5>
-                <p>Partner with us for events and programs</p>
+                <div class="other-ways-item">
+                  <i class="fa fa-briefcase"></i>
+                  <h5>Corporate Sponsorship</h5>
+                  <p>Partner with us for events and programs while gaining valuable community visibility</p>
+                </div>
               </div>
               <div class="col-sm-4">
-                <h5><i class="fa fa-gift"></i> In-Kind Donations</h5>
-                <p>Donate goods, services, or expertise</p>
+                <div class="other-ways-item">
+                  <i class="fa fa-gift"></i>
+                  <h5>In-Kind Donations</h5>
+                  <p>Donate goods, services, or expertise to directly support our chapter activities</p>
+                </div>
               </div>
             </div>
-            <p style="margin-top: 20px;">
-              <strong>For more information about these giving options, contact us at 
-              <a href="mailto:kappachi1979@gmail.com">kappachi1979@gmail.com</a></strong>
-            </p>
+            <div class="contact-info">
+              <p style="margin-bottom: 0; text-align: center; font-size: 16px;">
+                <strong>Ready to make a bigger impact? Contact us to learn more about these giving opportunities:</strong><br>
+                <a href="mailto:kappachi1979@gmail.com">kappachi1979@gmail.com</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
