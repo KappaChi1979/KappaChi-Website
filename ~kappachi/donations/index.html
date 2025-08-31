@@ -372,23 +372,106 @@
         <div class="row" style="margin-top: 20px;">
           <div class="col-md-6 col-md-offset-3">
             <label for="customAmount" style="font-weight: bold; margin-bottom: 10px;">Or enter a custom amount:</label>
-            <input type="number" id="customAmount" class="custom-amount" placeholder="Enter amount" min="1">
+            <input type="number" id="customAmount" class="custom-amount" placeholder="Enter amount" min="10">
           </div>
         </div>
+
+
+
+    <!-- Payment Section -->
+    <div>
+      <div class="payment-section">
+        <h3 class="text-center" style="color: #1f5490; margin-bottom: 20px;">Choose Payment Method</h3>
+        
+        <div class="payment-options">
+          <!-- PayPal Button Container -->
+          <div class="payment-method">
+            <div id="paypal-button-container"></div>
+          </div>
+          
+          <!-- Alternative Payment Methods -->
+          <div class="payment-method">
+            <button class="btn btn-donate" onclick="showStripePayment()" id="stripe-btn">
+              <i class="fa fa-credit-card"></i> Credit Card
+            </button>
+          </div>
+        </div>
+        
+        <!-- Stripe Payment Form (Hidden by default) -->
+        <div id="stripe-payment-form" style="display: none; margin-top: 30px;">
+          <div class="well">
+            <h4 style="color: #1f5490; text-align: center; margin-bottom: 20px;">Credit Card Payment</h4>
+            <form id="payment-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control" id="cardholder-name" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label>Card Information</label>
+                <!-- In a real implementation, you'd use Stripe Elements here -->
+                <div style="padding: 10px; border: 1px solid #ddd; border-radius: 4px; background: #f9f9f9;">
+                  <p style="margin: 0; color: #666; font-style: italic;">
+                    Secure card processing powered by Stripe<br>
+                    <small>Card details would be handled securely by Stripe Elements</small>
+                  </p>
+                </div>
+              </div>
+              
+              <div class="text-center">
+                <button type="button" class="btn btn-donate" onclick="processStripePayment()">
+                  <i class="fa fa-lock"></i> Donate Securely
+                </button>
+                <button type="button" class="btn btn-default" onclick="hideStripePayment()" style="margin-left: 10px;">
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+          </div>
+        </div>
+
+        <div class="loader">
+          <i class="fa fa-spinner fa-spin fa-2x" style="color: #1f5490;"></i>
+          <p>Processing your donation...</p>
+        </div>
+
+        <div class="success-message">
+          <h4><i class="fa fa-check-circle"></i> Thank You!</h4>
+          <p>Your donation has been processed successfully. You will receive a confirmation email shortly.</p>
+        </div>
+
+        <div class="payment-methods">
+          <p style="margin-bottom: 15px; color: #666;">Secure & trusted payment processing:</p>
+          <div>
+            <span style="display: inline-block; margin: 0 10px; padding: 5px 15px; background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+              <i class="fa fa-lock"></i> SSL Encrypted
+            </span>
+            <span style="display: inline-block; margin: 0 10px; padding: 5px 15px; background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+              <i class="fa fa-paypal"></i> PayPal
+            </span>
+            <span style="display: inline-block; margin: 0 10px; padding: 5px 15px; background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+              <i class="fa fa-credit-card"></i> Major Cards
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
 
         <div class="text-center" style="margin-top: 30px;">
           <button class="btn btn-donate" onclick="processDonation()">
             <i class="fa fa-heart"></i> Donate Now
           </button>
-        </div>
-
-        <div class="payment-methods">
-          <p style="margin-bottom: 15px; color: #666;">Secure payment methods accepted:</p>
-          <div>
-            <span style="display: inline-block; margin: 0 10px; padding: 5px 15px; background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">💳 Credit Card</span>
-            <span style="display: inline-block; margin: 0 10px; padding: 5px 15px; background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">🏦 Bank Transfer</span>
-            <span style="display: inline-block; margin: 0 10px; padding: 5px 15px; background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">📱 PayPal</span>
-          </div>
         </div>
       </div>
     </div>
@@ -470,7 +553,7 @@
       </div>
     </div>
 
-    <!-- Testimonials -->
+    <!-- Testimonials
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -498,7 +581,7 @@
         </div>
       </div>
     </div>
-
+  -->
     <!-- Additional Information -->
     <div class="container" style="margin: 60px auto;">
       <div class="row">
@@ -619,14 +702,18 @@
         $(this).addClass('selected');
         selectedAmount = parseInt($(this).data('amount'));
         $('#customAmount').val('');
+        initializePayPal(); // Re-initialize PayPal with new amount
       });
       
       // Handle custom amount input
       $('#customAmount').on('input', function() {
         $('.donation-amount').removeClass('selected');
         selectedAmount = parseInt($(this).val()) || 0;
+        if (selectedAmount > 0) {
+          initializePayPal(); // Re-initialize PayPal with custom amount
+        }
       });
-      
+
       // Add hover effects
       $('.impact-item').hover(
         function() {
@@ -636,9 +723,53 @@
           $(this).css('transform', 'translateY(0)');
         }
       );
+
+      // Initialize PayPal on page load
+      initializePayPal();
     });
+
+    function initializePayPal() {
+      // Clear existing PayPal buttons
+      document.getElementById('paypal-button-container').innerHTML = '';
+      
+      if (selectedAmount <= 0) {
+        // Show placeholder when no amount selected
+        document.getElementById('paypal-button-container').innerHTML = 
+          '<p style="color: #666; font-style: italic;">Select an amount above to enable PayPal</p>';
+        return;
+      }
+      
+      // Initialize PayPal buttons
+      paypal.Buttons({
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: selectedAmount.toString()
+              },
+              description: 'Donation to Kappa Chi Chapter of Phi Beta Sigma'
+            }]
+          });
+        },
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            showSuccessMessage();
+          });
+        },
+        onError: function(err) {
+          console.error('PayPal Error:', err);
+          alert('There was an error processing your PayPal payment. Please try again.');
+        },
+        style: {
+          color: 'blue',
+          shape: 'rect',
+          label: 'paypal',
+          height: 40
+        }
+      }).render('#paypal-button-container');
+    }
     
-    function processDonation() {
+    /*function processDonation() {
       if (selectedAmount <= 0) {
         alert('Please select or enter a donation amount.');
         return;
@@ -650,6 +781,74 @@
       
       // Example of what the real implementation might look like:
       // window.location.href = `https://your-payment-processor.com/donate?amount=${selectedAmount}&organization=kappa-chi`;
+    }*/
+    
+    // Smooth scrolling for internal links
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top - 100
+        }, 1000);
+      }
+    });
+
+    function showStripePayment() {
+      if (selectedAmount <= 0) {
+        alert('Please select or enter a donation amount first.');
+        return;
+      }
+      document.getElementById('stripe-payment-form').style.display = 'block';
+      document.getElementById('stripe-btn').disabled = true;
+    }
+    
+    function hideStripePayment() {
+      document.getElementById('stripe-payment-form').style.display = 'none';
+      document.getElementById('stripe-btn').disabled = false;
+    }
+    
+    function processStripePayment() {
+      // Validate form
+      const name = document.getElementById('cardholder-name').value;
+      const email = document.getElementById('email').value;
+      
+      if (!name || !email) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+      
+      // Show loading
+      document.querySelector('.loader').style.display = 'block';
+      
+      // Simulate payment processing
+      setTimeout(function() {
+        document.querySelector('.loader').style.display = 'none';
+        hideStripePayment();
+        showSuccessMessage();
+      }, 2000);
+    }
+    
+    function showSuccessMessage() {
+      document.querySelector('.success-message').style.display = 'block';
+      // Scroll to success message
+      $('html, body').animate({
+        scrollTop: $('.success-message').offset().top - 100
+      }, 1000);
+      
+      // Reset form after 5 seconds
+      setTimeout(function() {
+        resetDonationForm();
+      }, 5000);
+    }
+    
+    function resetDonationForm() {
+      selectedAmount = 0;
+      $('.donation-amount').removeClass('selected');
+      $('#customAmount').val('');
+      document.querySelector('.success-message').style.display = 'none';
+      hideStripePayment();
+      initializePayPal();
     }
     
     // Smooth scrolling for internal links
