@@ -172,8 +172,8 @@ const header = `
         <section class="container-fluid container">
           <section class="row-fluid">
             <section class="col-sm-4 text-center" style="margin-top:11px">
-              <p class="title title-sans center"><strong>Kappa Chi Chapter of</strong></p>
-              <p class="title title-sans center"><strong>Phi Beta Sigma Fraternity Inc</strong><bold></bold></p>
+              <p class="title title-sans center"><a href="/~kappachi/index.html"><strong>Kappa Chi Chapter of</strong></a></p>
+              <p class="title title-sans center"><a href="/~kappachi/index.html"><strong> Phi Beta Sigma Fraternity Inc</strong></bold></a></p>
             </section>
             <section class="col-sm-4">
               <img style="width:auto; max-height: 66px" class="center" src="/~kappachi/images/chapter_logo.png" alt="Be Human" />
