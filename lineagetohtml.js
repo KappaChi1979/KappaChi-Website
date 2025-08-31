@@ -204,12 +204,12 @@ const header = `
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav center" style="max-width:800px">
-              <li><a href="/~kappachi/">Home<span class="sr-only">(current)</span></a></li>
-              <li><a href="/~kappachi/fraternity">The Fraternity<span class="sr-only"></span></a></li>
-              <li><a href="/~kappachi/chapter">The Chapter<span class="sr-only"></span></a></li>
-              <li><a href="/~kappachi/programs">Programs</a></li>
-              <li><a href="/~kappachi/lineage">Lineage</a></li>
-              <li><a href="/~kappachi/membership">Membership</a></li>
+              <li><a href="/~kappachi/index.html">Home<span class="sr-only">(current)</span></a></li>
+              <li><a href="/~kappachi/fraternity/index.html">The Fraternity<span class="sr-only"></span></a></li>
+              <li><a href="/~kappachi/chapter/index.html">The Chapter<span class="sr-only"></span></a></li>
+              <li><a href="/~kappachi/programs/index.html">Programs</a></li>
+              <li><a href="/~kappachi/lineage/index.html">Lineage</a></li>
+              <li><a href="/~kappachi/membership/index.html">Membership</a></li>
               <li><a href="/~kappachi/newsletter/index.html">Newsletter</a></li>
               <li><a href="/~kappachi/donations/index.html">Donations</a></li>
             </ul>
