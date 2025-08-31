@@ -792,12 +792,6 @@
     function initializePayPal() {
       document.getElementById('paypal-button-container').innerHTML = '';
       
-      if (selectedAmount <= 0) {
-        document.getElementById('paypal-button-container').innerHTML = 
-          '<p style="color: #666; font-style: italic;">Select an amount above to enable PayPal</p><br>';
-        return;
-      }
-      
       paypal.Buttons({
         createOrder: function(data, actions) {
           return actions.order.create({
