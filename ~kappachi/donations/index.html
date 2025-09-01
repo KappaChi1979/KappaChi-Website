@@ -44,6 +44,7 @@
   <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
 
   <!-- Custom Donations Styles -->
+  <!-- Custom Donations Styles -->
   <style>
     .donations-hero {
       background: linear-gradient(135deg, #1f5490 0%, #2980b9 100%);
@@ -246,16 +247,33 @@
       background: linear-gradient(90deg, #1f5490 0%, #2980b9 100%);
     }
     
+    .other-ways-section .row {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+    
+    .other-ways-section .col-sm-4 {
+      flex: 1;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+    }
+    
     .other-ways-item {
       text-align: center;
       padding: 25px 15px;
       background: white;
       border-radius: 12px;
-      margin-bottom: 20px;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
       transition: all 0.3s ease;
       border: 1px solid #f1f3f4;
       position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     
     .other-ways-item:hover {
@@ -289,6 +307,7 @@
       font-size: 14px;
       line-height: 1.5;
       margin-bottom: 0;
+      flex-grow: 1;
     }
     
     .contact-info {
@@ -862,47 +881,19 @@
     </div>
 
     <!-- Donation Categories -->
-    <div class="container donation-categories">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-center" style="margin-bottom: 40px; color: #1f5490;">Ways to Support</h2>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-6">
-          <div class="category-card">
-            <h4><i class="fa fa-graduation-cap"></i> Scholarship Fund</h4>
-            <p>Support educational opportunities for deserving students. Your contribution helps provide financial assistance to brothers maintaining academic excellence while giving back to the community.</p>
-          </div>
-          
-          <div class="category-card">
-            <h4><i class="fa fa-users"></i> Brotherhood Development</h4>
-            <p>Fund leadership training, mentorship programs, and character development initiatives that strengthen our bonds and prepare brothers for lifelong success.</p>
-          </div>
-        </div>
-        
-        <div class="col-md-6">
-          <div class="category-card">
-            <h4><i class="fa fa-heart"></i> Community Service</h4>
-            <p>Enable impactful community service projects including food drives, educational programs, and neighborhood improvement initiatives that embody our motto "Service For Humanity."</p>
-          </div>
-          
-          <div class="category-card">
-            <h4><i class="fa fa-home"></i> Chapter House & Facilities</h4>
-            <p>Support maintenance, improvements, and equipment for our chapter facilities, ensuring a welcoming environment for meetings, events, and brotherhood activities.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Additional Information -->
     <div class="container" style="margin: 60px auto;">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <div class="other-ways-section">
             <h3 style="color: #1f5490; margin-bottom: 30px; text-align: center; font-size: 28px; font-weight: bold;">Other Ways to Give</h3>
             <div class="row">
+              <div class="col-sm-4">
+                <div class="other-ways-item">
+                  <i class="fa fa-gift"></i>
+                  <h5>Scholarship Fund</h5>
+                  <p>Support educational opportunities for deserving students. Your contribution helps provide financial assistance to brothers maintaining academic excellence while giving back to the community.</p>
+                </div>
+              </div>
               <div class="col-sm-4">
                 <div class="other-ways-item">
                   <i class="fa fa-calendar"></i>
@@ -920,7 +911,7 @@
               <div class="col-sm-4">
                 <div class="other-ways-item">
                   <i class="fa fa-gift"></i>
-                  <h5>In-Kind Donations</h5>
+                  <h5>Donations</h5>
                   <p>Donate goods, services, or expertise to directly support our chapter activities</p>
                 </div>
               </div>
