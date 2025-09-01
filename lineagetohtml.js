@@ -210,7 +210,7 @@ const header = `
               <li><a href="/~kappachi/programs/index.html">Programs</a></li>
               <li><a href="/~kappachi/lineage/index.html">Lineage</a></li>
               <li><a href="/~kappachi/membership/index.html">Membership</a></li>
-              <li><a href="/~kappachi/newsletter/index.html">Newsletter</a></li>
+              <!--<li><a href="/~kappachi/newsletter/index.html">Newsletter</a></li>-->
               <li><a href="/~kappachi/donations/index.html">Donations</a></li>
             </ul>
           </div>
