@@ -1,3 +1,8 @@
+Kappa Chi Lineage
+Description: Contains full kappa chi lineage
+
+
+
 [
   {
     "line": "Lone Σurvivor",
@@ -117,7 +122,7 @@
     },
     {
       "lineName": "Destruction",
-      "name": "Rodrick Tooles"
+      "name": "Rod"
     },
     {
       "lineName": "Catastrophe",
@@ -125,6 +130,44 @@
     }
     ]
   },  
+  {
+    "line": "The Assasins",
+    "date": "Fall 21",
+    "image": "",
+    "members": [
+    {
+      "lineName": "Cut Throat",
+      "name":"PJ Odom"
+    },
+    {
+      "lineName": "ΣharpΣhooter",
+      "name": "Anthony Tom"
+    }
+    ]
+  },
+  {
+    "line": "The Guardians",
+    "date": "Fall 19",
+    "image": "",
+    "members": [
+    {
+      "lineName": "Σwordsman",
+      "name":""
+    },
+    {
+      "lineName": "BeaΣt",
+      "name": ""
+    },
+    {
+      "lineName": "Σeargeant",
+      "name": "Jakevious Rousser"
+    },
+    {
+      "lineName": "AfterΣhock",
+      "name": "Hunter Man"
+    }
+    ]
+  },
   {
     "line": "The Resurgence",
     "date": "Fall 18",
