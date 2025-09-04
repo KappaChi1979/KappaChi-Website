@@ -120,7 +120,7 @@ const header = `
 <!--<![endif]-->
 
 <head>
-  <title>Lineage | Kappa Chi Chapter</title>
+  <title>Lineage | The Kappa Chi Chapter of Phi Beta Sigma Fraternity, Inc | University of Tennessee Knoxville</title>
   <!-- Browser Tab Icon-->
   <link rel="icon" type="image/png" href="/~kappachi/images/chapter_logo.png">
   <meta name="description" content="Local chapter of Phi Beta Sigma. Uplifiting the Knoxville community through empowerment and excellence since 1979." >
