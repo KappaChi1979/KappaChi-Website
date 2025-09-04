@@ -46,6 +46,113 @@
   <link rel="stylesheet" id="skins" href="/~kappachi/css/default.css" type="text/css" media="all">
   <!-- skins -->
   <!-- end of Color Switcher -->
+  <style>
+    /*Chapter Page Styling*/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .brothers-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .titleB {
+      text-align: center;
+      color: rgb(36, 94, 201);
+      font-size: 4.5rem;
+      font-weight: bold;
+      margin-bottom: 50px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .brothers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 20px 0;
+    }
+
+    .brother-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .brother-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(31, 84, 144, 0.1), transparent);
+      transition: left 0.5s;
+    }
+
+    .brother-card:hover::before {
+      left: 100%;
+    }
+
+    .brother-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    }
+
+    .brother-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      background: linear-gradient(135deg, #1f5490, #3a7bc8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .brother-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .brother-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #1f5490;
+      margin-bottom: 10px;
+    }
+
+    .brother-title {
+      font-size: 0.9rem;
+      color: #666;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    .brother-bio {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.6;
+    }
+  </style>
 
 </head>
 
@@ -109,87 +216,104 @@
       <!-- End Main Nav Bar -->
     </header>
       <section class="col-md-6 col-md-offset-3" style="min-height: 300px">
-        <h2 class="title text-center">Executive Board</h2>
-        <table class="table table-bordered table-striped justify" style="background-color: #1f5490">
-          <tr>
-            <td>Jerrin Lowe <!--<img src="/KappaChi-Website/~kappachi/images/" class="image-container img">-->    </td>
-            <td>President</td>
-          </tr>
-          <tr>
-            <td>Julian McCoy</td>
-            <td>1st Vice President</td>
-          </tr>
-          <tr>
-            <td>Dylan Woods</td>
-            <td>2nd Vice President</td>
-          </tr>
-          <tr>
-            <td>Kevin Aimua</td>
-            <td>Treasurer</td>
-          </tr>
-          <tr>
-            <td>Jalin Wilson</td>
-            <td>Secretary</td>
-          </tr>
-        </table>
-        <br><br>
-        <h2 class="title text-center">Current Members</h2>
-        <table class="table table-bordered table-striped text-left" style="background-color: #1f5490">
-          <tr>
-            <td>Jerrin Lowe <!--<img src="/KappaChi-Website/~kappachi/images/" class="image-container img">-->    </td>
-          </tr>
-          <tr>
-            <td>Julian McCoy</td>
-            <td><img src="" class=""></td>
-          </tr>
-          <tr>
-            <td>Dylan Woods</td>
-            <td><img src="" class=""></td>
-          </tr>
-          <tr>
-            <td>Kevin Aimua</td>
-            <td><img src="" class=""></td>
-          </tr>
-          <tr>
-            <td>Jalin Wilson</td>
-            <td><img src="" class=""></td>
-          </tr>
-          <tr>
-            <td>Carson Broughton</td>
-            <td><img src="" class=""></td>
-          </tr>
-          <tr>
-            <td>Dre Robinson</td>
-            <td><img src="" class=""></td>
-          </tr>
-          <tr>
-            <td>Anthony Toms</td>
-            <td><img src="" class=""></td>
-          </tr>
-          <tr>
-            <td>Chris</td>
-            <td><img src="" class=""></td>
-          </tr>
-          <tr>
-            <td>Dalen Gary</td>
-            <td><img src="" class=""></td>
-          </tr>
-        </table>
+        <!--MEET THE BROTHERS SECTION-->
+        <div class="brothers-section">
+        <h1 class="titleB text-center">Meet the Brothers</h1>
+        <div class="brothers-grid">
+          <div class="brother-card">
+            <div class="brother-image">
+              <img src="ChapterHeadshots/jerrin.jpg" alt="Jerrin Lowe">
+            </div>
+            <div class="brother-name">Jerrin Lowe</div>
+            <div class="brother-title">President</div>
+            <div class="brother-bio">Leading our fraternity with dedication and vision.</div>
+          </div>
+
+          <div class="brother-card">
+            <div class="brother-image">
+                <img src="ChapterHeadshots/Dylan.JPG" alt="Dylan Woods">
+            </div>
+            <div class="brother-name">Dylan Woods</div>
+            <div class="brother-title">1st Vice President</div>
+            <div class="brother-bio">Supporting our brotherhood with commitment and leadership.</div>
+          </div>
+          
+          <div class="brother-card">
+            <div class="brother-image">
+                <img src="ChapterHeadshots/Dre.jpeg" alt="D'Ardrey Robinson">
+            </div>
+            <div class="brother-name">D'Ardrey Robinson</div>
+            <div class="brother-title">2nd Vice President</div>
+            <div class="brother-bio">Uplfiting our brotherhood with commitment and leadership.</div>
+          </div>
+
+            <div class="brother-card">
+              <div class="brother-image">KA</div>
+              <div class="brother-name">Kevin Aimua</div>
+              <div class="brother-title">Treasurer</div>
+              <div class="brother-bio">Managing our finances with precision and care.</div>
+            </div>
+
+            <div class="brother-card">
+              <div class="brother-image">JW</div>
+              <div class="brother-name">Jalin Wilson</div>
+              <div class="brother-title">Secretary</div>
+              <div class="brother-bio">Keeping our records and communications organized.</div>
+            </div>
+
+            <div class="brother-card">
+              <div class="brother-image">
+                <img src="ChapterHeadshots/Carson.JPG" alt="Carson Broughton">
+              </div>
+              <div class="brother-name">Carson Broughton</div>
+              <div class="brother-title">Social Chair</div>
+              <div class="brother-bio">Organizing memorable events and building community.</div>
+            </div>
+
+
+            <div class="brother-card">
+              <div class="brother-image">AT</div>
+              <div class="brother-name">Anthony Toms</div>
+              <div class="brother-title">Event Planning Chair</div>
+              <div class="brother-bio">Leading our community service initiatives.</div>
+            </div>
+
+            <div class="brother-card">
+              <div class="brother-image">
+                  <img src="ChapterHeadshots/Julian.jpg" alt="Julian McCoy">
+              </div>
+              <div class="brother-name">Julian McCoy</div>
+              <div class="brother-title">Member</div>
+              <div class="brother-bio">Supporting our brotherhood with commitment and leadership.</div>
+            </div>
+
+            <div class="brother-card">
+              <div class="brother-image">
+                <img src="ChapterHeadshots/Chris.jpg" alt="Chris Turner">
+              </div>
+              <div class="brother-name">Chris Turner</div>
+              <div class="brother-title">Member</div>
+              <div class="brother-bio">Contributing to our brotherhood's success.</div>
+            </div>
+
+            <div class="brother-card">
+              <div class="brother-image">
+                <img src="ChapterHeadshots/Dalen.JPG" alt="Julian McCoy">
+              </div>
+              <div class="brother-name">Dalen Gary</div>
+              <div class="brother-title">Member</div>
+              <div class="brother-bio">Bringing energy and enthusiasm to our fraternity.</div>
+            </div>
+          </div>
+        </div>
       </section>
-    <!-- End of Donation Box -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <!-- End of MEET THE BROTHERS -->
+    
     <div class="clearfix"></div>
     <hr>
     <hr>
     <!-- End of Header -->
+     <h2 class="titleB text-center">Chapter Info</h2>
     <!-- Start of Features Boxes -->
     <section id="ngo_features" class="mbtm">
       <section class="container-fluid container">
@@ -222,7 +346,7 @@
     
     <section class="col-sm-10 col-sm-offset-1 well">
       <div>
-        <h2 class="text-center">History</h2>
+        <h2 class="title text-center">History</h2>
         <p>Since the Kappa Chi Chapter of Phi Beta Sigma Fraternity, Inc. was chartered on the University of Tennessee campus
           in 1979, our brotherhood has played pivotal roles in numerous facets of UT life. Our brothers have held memberships
           in SGA, Black Cultural Programming Committee, NAACP, Student African American Brotherhood, UT football and track
@@ -233,7 +357,7 @@
     </section>
     <section class="col-sm-10 col-sm-offset-1 well">
       <div>
-        <h2 class="text-center">Accolades</h2>
+        <h2 class="title text-center">Accolades</h2>
         <ul>
           <li>2006 Outstanding Student Organization - Dean of Students Leadership Recognition Program</li>
           <li>2nd Place - 2006 Southeastern Stompfest</li>
@@ -252,7 +376,7 @@
 
     <section class="col-sm-10 col-sm-offset-1 well">
       <div>
-        <h2 class="text-center">Campus Involvement</h2>
+        <h2 class="title text-center">Campus Involvement</h2>
         <ul>
           <li>African American Achievers Scholars</li>
           <li>African American Incentive Grant Recipients</li>
