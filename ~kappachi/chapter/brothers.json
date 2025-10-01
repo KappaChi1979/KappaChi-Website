@@ -1,0 +1,64 @@
+{
+  "brothers": [
+    {
+      "name": "Jerrin Lowe",
+      "title": "President",
+      "image": "ChapterHeadshots/jerrin.jpg",
+      "bio": "Leading our fraternity with dedication and vision."
+    },
+    {
+      "name": "Dylan Woods",
+      "title": "1st Vice President & Intake Chair",
+      "image": "ChapterHeadshots/Dylan.JPG",
+      "bio": "Supporting our brotherhood with commitment and leadership."
+    },
+    {
+      "name": "D'Ardrey Robinson",
+      "title": "2nd Vice President",
+      "image": "ChapterHeadshots/Dre.jpeg",
+      "bio": "Uplifting our brotherhood with commitment and leadership."
+    },
+    {
+      "name": "Kevin Aimua",
+      "title": "Treasurer",
+      "image": "",
+      "bio": "Managing our finances with precision and care."
+    },
+    {
+      "name": "Jalin Wilson",
+      "title": "Secretary",
+      "image": "",
+      "bio": "Keeping our records and communications organized."
+    },
+    {
+      "name": "Carson Broughton",
+      "title": "Social Chair",
+      "image": "ChapterHeadshots/Carson.JPG",
+      "bio": "Organizing memorable events and building community."
+    },
+    {
+      "name": "Anthony Toms",
+      "title": "Event Planning & Service Chair",
+      "image": "",
+      "bio": "Leading our community service initiatives."
+    },
+    {
+      "name": "Julian McCoy",
+      "title": "Member",
+      "image": "ChapterHeadshots/Julian.jpg",
+      "bio": "Supporting our brotherhood with commitment and leadership."
+    },
+    {
+      "name": "Chris Turner",
+      "title": "Member",
+      "image": "ChapterHeadshots/Chris.jpg",
+      "bio": "Contributing to our brotherhood's success."
+    },
+    {
+      "name": "Dalen Gary",
+      "title": "Member",
+      "image": "ChapterHeadshots/Dalen.JPG",
+      "bio": "Bringing energy and enthusiasm to our fraternity."
+    }
+  ]
+}

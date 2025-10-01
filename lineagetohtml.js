@@ -9,7 +9,7 @@ fs.readFile('./lineage.json', (req, json) => {
     file += html;
   })
     fs.writeFile('./~kappachi/lineage/index.html', header + file + '</section> <!-- cd-timeline -->' + footer, (err, res)=> {
-      if(!err) console.log('success');
+      if(!err) console.log('\nSuccess: Lineage has been Updated');
     })
 });
 
