@@ -189,11 +189,13 @@ Main components
   
 }
 .cd-timeline-content img {
+  border-radius: 15px;
   transition: transform 0.5s ease;
   cursor: pointer;
 }
 
 .cd-timeline-content img:hover {
+  border-radius: 15px;
   transform: scale(1.1);
 }
 
@@ -300,7 +302,6 @@ Main components
   transition: all 0.3s ease;
 }
 
-/* Add spacing between image and table */
 .cd-timeline-content .col-sm-12 img {
   margin-bottom: 20px;
   text-align: center;
@@ -323,6 +324,7 @@ Main components
 .cd-timeline-content h2 {
   color: #101111;
   font-weight: bold;
+  padding-bottom: 30px;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
