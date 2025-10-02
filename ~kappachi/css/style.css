@@ -213,7 +213,29 @@ body{ background:url('/~kappachi/images/bg_main.png') top center repeat;}
 }
 
 
+/**Sisterhood Section-Landing page**/
+#sister_organization .well {
+  transition: all 0.3s ease;
+}
 
+#sister_organization .well:hover {
+  box-shadow: 0 10px 40px rgba(0, 93, 170, 0.15);
+}
+
+#sister_organization img {
+  transition: all 0.3s ease;
+}
+
+#sister_organization img:hover {
+  transform: scale(1.05);
+}
+
+#sister_organization a:hover {
+  background: #0d2c5c;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(31, 84, 144, 0.4);
+  text-decoration: none;
+}
 
 /** Counter **/
 .countdown_row { margin:0; list-style:none; padding:0; width:100%; clear:both;}
