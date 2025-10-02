@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic);
 @import url('prettyPhoto.css');
 @import url('social.css'); 
+
 /** Table Of Content 
 
 	- Getting the new tags to behave	Line 51 - 79
@@ -42,9 +43,6 @@
 	- Shortcodes						Line 926 - 930
 	- Included Files 					PrettyPhoto.css , Bootstrap.css , bxslider.css, Full Calander  ( calendar.css ), font-awesome.css , gallery_widget.css , Social Icons Hover ( social.css ) , NoJavascript (nj.css);
 	
-
- 
-
 
 End of Table of Content Line 49 **/
 
@@ -105,26 +103,32 @@ a img:hover { opacity:0.6; transition: width 1s; -moz-transition: 1s; /* Firefox
 
 
 
-
-
-
-
-
-
-
 /** End of Tags Use Once Line 121 **/ 
 
+/*Sets Scroll Behaviour*/
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
+  transition: all 0.3s ease;
+}
+
+.title:hover {
+  transform: translateY(-2px);
+}
+
 /** General Body Styling **/
-body{ background:url('../images/bg_main.png') top center repeat;}
+body{ background:url('/~kappachi/images/bg_main.png') top center repeat;}
 
 /** Header **/
 .top_bar ul{ list-style-type:none;  margin:0; padding:0; }
 .top_bar li{display:inline-block; }
 .top_bar{background:#252525; color:#a1a1a1; font-size:12px; padding:20px 0 10px;}
 .top_bar .details i{ color:#a1a1a1; font-size:18px; margin-right:5px;}
-.top_bar .details li{margin-right:10px; }
-.social li{ float:right;}
-.top_bar .social li a{ background-image:url('../images/top_social_icons.png'); display:inline-block; width:30px; height:30px; margin-right:3px; overflow:hidden; text-indent:-50000px;}
+.top_bar .details li{ margin-right:10px; }
+.social li{ float:right; }
+.top_bar .social li a{ background-image:url('/~kappachi/images/top_social_icons.png'); display:inline-block; width:30px; height:30px; margin-right:3px; overflow:hidden; text-indent:-50000px;}
 .top_bar .social li a.s1{ background-position: -5px 0;}
 .top_bar .social li a.s1:hover{ background-position: -5px 32px;}
 .top_bar .social li a.s2{ background-position: -38px 0;}
@@ -141,14 +145,60 @@ body{ background:url('../images/bg_main.png') top center repeat;}
 .top_bar .social li a.s7:hover{ background-position: -202px 32px;}
 .top_bar .social li a.s8{ background-position: -236px 0;}
 .top_bar .social li a.s8:hover{ background-position: -236px 32px;}
-.logo_container{ padding:30px 0;}
-#logo img{ width:auto; height:auto;}
+
+/*Logo Styling*/
+.logo_container {
+  background: linear-gradient(135deg, rgba(20, 83, 160, 0.05) 0%, rgba(255, 255, 255, 0.95) 100%);
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.logo_container img {
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 5px 15px rgba(20, 83, 160, 0.2));
+}
+
+.logo_container img:hover {
+  transform: scale(1.05) rotate(5deg);
+}
 
 /** Navigation **/
-#nav{ background:	#363636; border-bottom:2px solid #1b1b1b;}
-#nav .navbar{ margin-bottom:0; display:inline-block; float:left;}
-#nav .navbar-inner{ background:none !important; background-image:none !important; border:0px !important; box-shadow:none; padding-left:0; padding-right:0;}
-#nav .navbar li:hover{ background:#252525;}
+.navbar-inverse {
+  background: linear-gradient(135deg, #1453a0 0%, #1f5490 100%);
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-inverse .navbar-nav > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-inverse .navbar-nav > li > a:hover::after,
+.navbar-inverse .navbar-nav > li > a:focus::after {
+  width: 100%;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
 
 
 /** Counter **/
@@ -163,13 +213,24 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 .countdown_section br { margin:0px !important; padding:0px !important; display:inline-block; float:left; line-height:0px; }
 .charity_counter_wrapper{ background:url('../images/bg_counter.png') top center repeat; overflow:hidden; width:100%; margin-top:19px;}
 .charity_title {    background: url("../images/marathon_icon.png") no-repeat scroll 0 center transparent;    color: #1f5490;    float: left;    font-size: 14px;    font-weight: bold;    margin: 3px 0 -1px 16px;    min-height: 51px;    padding: 8px 0 0 52px;}
-.event_more a{    background: none repeat scroll 0 0 #1f5490;    font-size: 21px;    padding: 21px 0 22px;    text-align: center; color:#fff;  display:block; }
+.event_more a{background: none repeat scroll 0 0 #1f5490;    font-size: 21px;    padding: 21px 0 22px;    text-align: center; color:#fff;  display:block; }
 .event_more{ margin-left:0 !important;}
 
 /** Header Banner **/
-#banner_slider{ width:100%; margin:0; padding:0;}
-#banner_slider li img{ width:100%; height:auto !important;}
-#banner_slider li { position:relative !important;}
+#banner_slider {
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+	transition: all 0.3s ease;
+	margin: 0;
+	padding: 0;
+	width:100%;
+}
+
+#banner_slider li img{ width:100%; height:auto !important; transition: transform 0.5s ease;}
+#banner_slider:hover {box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); transform: translateY(-5px);}
+#banner_slider:hover img {transform: scale(1.05);}
+#banner_slider li { position:relative !important; }
 #banner_slider li div{ position:absolute; left:19.4%; top:60%; font-size:48px; line-height:60px; color:#ffffff; font-family: 'Open Sans', sans-serif; max-width:80% !important;}
 #banner_slider li div  p{ padding:10px 15px; overflow:hidden; margin-bottom:0; display:inline-block; clear:both;}
 #banner_slider li div .b_dark{ background:rgb(27,27,27); background:rgba(27,27,27,0.90); }
@@ -177,7 +238,7 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 .banner_slider .bx-default-pager{ display:none;}
 .banner_slider{ position:relative;}
 .banner_slider .bx-controls-direction{ position:absolute; right:19.3%; top:77%; max-width:90%;}
-.banner_slider .bx-controls-direction a{ background-image:url('../images/t_slider_nav.png'); display:inline-block; width:28px; height:28px; overflow:hidden; text-indent:-5000px; }
+.banner_slider .bx-controls-direction a{ background-image:url('/~kappachi/images/t_slider_nav.png'); display:table-caption; width:28px; height:28px; overflow:hidden; text-indent:-5000px; }
 .banner_slider .bx-controls-direction a.bx-next{ background-position: 28px 0;}
 .banner_slider .bx-controls-direction a.bx-prev{ background-position: 0 0;}
 
@@ -185,20 +246,21 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 .feature{  overflow:hidden; -webkit-box-shadow:  1px 1px 8px -6px #000000 ; box-shadow:1px 1px 8px -6px #000000; }
 .feature .ftr_img{ background:#fff; padding:30px 0; display:block;}
 .ftr_img .img{ display:block;  width:80px; height:80px; margin:0 auto; text-indent:-999px; overflow:hidden;}
-.f-img-1 .img{ background:url('../images/feature_img_1.png') top center no-repeat;}
-.f-img-2 .img{ background:url('../images/feature_img_2.png') top center no-repeat;}
-.f-img-3 .img{ background:url('../images/feature_img_3.png') top center no-repeat;}
-.f-img-4 .img{ background:url('../images/feature_img_4.png') top center no-repeat;}
+.f-img-1 .img{ background:url('/~kappachi/images/feature_img_1.png') top center no-repeat;}
+.f-img-2 .img{ background:url('/~kappachi/images/feature_img_2.png') top center no-repeat;}
+.f-img-3 .img{ background:url('/~kappachi/images/feature_img_3.png') top center no-repeat;}
+.f-img-4 .img{ background:url('/~kappachi/images/feature_img_4.png') top center no-repeat;}
 .ftr_txt{ background:#f6f6f6; padding:20px 10px; text-align:center; }
 .ftr_txt strong{ font-size:18px; line-height:30px; display:block; margin:0 0 12px;}
-	/** Feature box hover and Active **/
+
+/** Feature box hover and Active **/
 .feature:hover  .ftr_txt strong, .feature.active .ftr_txt strong { color:#1f5490}
 .feature:hover .ftr_img, .feature.active .ftr_img{ background: top center no-repeat #1f5490; display:block; }
 .feature:hover .ftr_txt, .feature.active .ftr_txt{ background:#fff; }
-.feature:hover .f-img-1 .img, .feature.active .f-img-1 .img{ background:url('../images/feature_img_1_hover.png') top center no-repeat;}
-.feature:hover .f-img-2 .img, .feature.active .f-img-2 .img{ background:url('../images/feature_img_2_hover.png') top center no-repeat;}
-.feature:hover .f-img-3 .img, .feature.active .f-img-3 .img{ background:url('../images/feature_img_3_hover.png') top center no-repeat;}
-.feature:hover .f-img-4 .img, .feature.active .f-img-4 .img{ background:url('../images/feature_img_4_hover.png') top center no-repeat;}
+.feature:hover .f-img-1 .img, .feature.active .f-img-1 .img{ background:url('/~kappachi/images/feature_img_1_hover.png') top center no-repeat;}
+.feature:hover .f-img-2 .img, .feature.active .f-img-2 .img{ background:url('/~kappachi/images/feature_img_2_hover.png') top center no-repeat;}
+.feature:hover .f-img-3 .img, .feature.active .f-img-3 .img{ background:url('/~kappachi/images/feature_img_3_hover.png') top center no-repeat;}
+.feature:hover .f-img-4 .img, .feature.active .f-img-4 .img{ background:url('/~kappachi/images/feature_img_4_hover.png') top center no-repeat;}
 /** Feature box hover and Active **/
 
 /** Donation Section **/
@@ -219,7 +281,7 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 #charity_progress .progress-striped .bar {  background-color: #1f5490;}
 #charity_progress .progress.active .bar {    animation: 4s linear 0s normal none infinite progress-bar-stripes; }
 #charity_progress .progress{ height:10px; }
-#charity_progress .info{ background: url("../images/bg_counter.png") repeat scroll center top transparent; overflow:hidden; color:#fff; font-weight:bold; padding:2px 5px 2px; }
+#charity_progress .info{ background: url("/~kappachi/images/bg_counter.png") repeat scroll center top transparent; overflow:hidden; color:#fff; font-weight:bold; padding:2px 5px 2px; }
 #charity_progress .info span{ color:#93dce0;}
 #charity_progress i{ font-size:26px; width:30px; margin-left:5px; margin-right:5px; }
 
@@ -400,7 +462,7 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 					/** Footer Gallery **/
 				
 				/** Popular Post Wideget **/
-					#footer .popular_post ul li span {    background: url("../images/bg_foot_icon.png") no-repeat scroll center top transparent;    color: #FFFFFF;    display: block;    float: left;    font-size: 20px;    height: 42px;    margin-right: 20px;    text-align: center;    width: 42px;}
+					#footer .popular_post ul li span {    background: url("/~kappachi/images/bg_foot_icon.png") no-repeat scroll center top transparent;    color: #FFFFFF;    display: block;    float: left;    font-size: 20px;    height: 42px;    margin-right: 20px;    text-align: center;    width: 42px;}
 					#footer .popular_post ul li span i{ margin-top:10px; display:block;}					
 				/** End of Popular Post Wideget **/
 				
@@ -426,7 +488,7 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 		.footer_nav li {    border-right: 1px solid #EEEEEE;    color: #EEEEEE;    display: inline-block;    line-height: 15px;    margin-left: 20px;    padding-right: 20px;} 
 		.footer_3 #latest_tweets { list-style-type:none; font-size:13px; border-left:1px solid #bbbbbb; margin-left:0; padding-left:20px; padding-bottom:12px;}
 		#latest_tweets li a { color:#1f5490;}
-		#tweets.latest_tweets{  background:url('../images/twitter_bg.png') top right no-repeat; min-height:100px;}
+		#tweets.latest_tweets{  background:url('/~kappachi/images/twitter_bg.png') top right no-repeat; min-height:100px;}
 		.footer_3 #latest_tweets  li{ width:90%;}
 		.footer_3 #latest_tweets span{ clear:both; text-align:right; width:100%; font-style:italic; display:block;}
 		/** End of Footer 3 **/

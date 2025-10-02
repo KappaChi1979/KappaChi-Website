@@ -609,12 +609,6 @@
           </div>
         </div>
         
-        <div class="row" style="margin-top: 20px;">
-          <div class="col-md-6 col-md-offset-3">
-            <label for="customAmount" style="font-weight: bold; margin-bottom: 10px;">Or enter a custom amount:</label>
-            <input type="number" id="customAmount" class="custom-amount" placeholder="Enter amount" min="10">
-          </div>
-        </div>
 
         <!-- Payment Section -->
         <div class="payment-section">
@@ -628,13 +622,10 @@
             <p style="margin-bottom: 15px; color: #666;">Secure & trusted payment processing:</p>
             <div>
               <span style="display: inline-block; margin: 0 10px; padding: 5px 15px; background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                <i class="fa fa-lock"></i> SSL Encrypted
+                <i class="fa fa-credit-card"></i> SSL Encrypted
               </span>
               <span style="display: inline-block; margin: 0 10px; padding: 5px 15px; background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                <i class="fa fa-paypal"></i> PayPal
-              </span>
-              <span style="display: inline-block; margin: 0 10px; padding: 5px 15px; background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                <i class="fa fa-credit-card"></i> Major Cards
+                <i class="fa fa-credit-card"></i> Accepts Major Credit/Debit Cards
               </span>
             </div>
           </div>
@@ -650,18 +641,6 @@
           <span class="close-modal" onclick="closePaymentModal()">&times;</span>
         </div>
         <div class="payment-modal-body">
-          <p class="text-center" style="margin-bottom: 30px; color: #666;">
-            Donation Amount: <strong id="modal-amount">$0</strong>
-          </p>
-          
-          <div class="payment-method-cards">
-            <div class="payment-card" onclick="selectPaymentMethod('paypal')">
-              <div class="payment-card-icon">
-                <i class="fa fa-paypal"></i>
-              </div>
-              <h4>PayPal</h4>
-              <p>Quick and secure payment with your PayPal account</p>
-            </div>
             
             <div class="payment-card" onclick="selectPaymentMethod('credit-card')">
               <div class="payment-card-icon">
@@ -990,7 +969,6 @@
 <![endif]-->
 
   <script>
-    let selectedAmount = 0;
     
     $(document).ready(function() {
       // Handle donation amount selection
@@ -999,12 +977,6 @@
         $(this).addClass('selected');
         selectedAmount = parseInt($(this).data('amount'));
         $('#customAmount').val('');
-      });
-      
-      // Handle custom amount input
-      $('#customAmount').on('input', function() {
-        $('.donation-amount').removeClass('selected');
-        selectedAmount = parseInt($(this).val()) || 0;
       });
 
       // Add hover effects
@@ -1027,12 +999,6 @@
     });
 
     function openPaymentModal() {
-      if (selectedAmount <= 0) {
-        alert('Please select or enter a donation amount first.');
-        return;
-      }
-      
-      document.getElementById('modal-amount').textContent = selectedAmount
       document.getElementById('payment-modal').style.display = 'flex';
       document.body.style.overflow = 'hidden';
     }
