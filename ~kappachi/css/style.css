@@ -164,6 +164,14 @@ body{ background:url('/~kappachi/images/bg_main.png') top center repeat;}
 }
 
 /** Navigation **/
+@media (min-width: 768px) {
+  .navbar-nav.center {
+    float: none;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+  }
+}
 .navbar-inverse {
   background: linear-gradient(135deg, #1453a0 0%, #1f5490 100%);
   border: none;
@@ -223,15 +231,6 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 .event_more{ margin-left:0 !important;}
 
 /** Header Banner **/
-
-@media (min-width: 768px) {
-  .navbar-nav.center {
-    float: none;
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed;
-  }
-}
 #banner_slider {
   border-radius: 15px; 
   overflow: hidden; 
