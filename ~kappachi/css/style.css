@@ -237,7 +237,7 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
   overflow: hidden; 
   transition: all 0.3s ease; 
   margin: 0; 
-  padding: 0; 
+  padding: 20px; 
   width:100%;
 }
 
@@ -252,6 +252,7 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
   height: auto !important; 
   transition: transform 0.5s ease;
   display: block;
+  border-radius: 15px;
 }
 
 /* Zoom effect on individual images when hovered */
@@ -262,7 +263,7 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 /* Slider container hover effect */
 #banner_slider:hover {
 	border-radius: 15px;  
-  transform: translateY(-5px);
+  	transform: translateY(-5px);
 }
 
 #banner_slider li div { 
