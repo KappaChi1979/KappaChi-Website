@@ -124,7 +124,46 @@
       "name": "Reginald Johnson"
     }
     ]
-  },  
+  }, 
+  {
+    "line": "The Assasins",
+    "date": "Fall 21",
+    "image": "",
+    "members": [
+    {
+      "lineName": "Cut Throat",
+      "name":"PJ Odom"
+    },
+    {
+      "lineName": "Sharphooter",
+      "name":"Anthony Tom"
+    }
+    ]
+  }, 
+   
+  {
+    "line": "The GuardianΣ",
+    "date": "Fall 19",
+    "image": "",
+    "members": [
+    {
+      "lineName": "Σwordsman",
+      "name":"Samuel Williams"
+    },
+    {
+      "lineName": "BEAΣT",
+      "name": "William Pierce the 3rd"
+    },
+    {
+      "lineName": "Σergeant",
+      "name": "Jakevious Rosser"
+    },
+    {
+      "lineName": "AfterΣhock",
+      "name": "J'air Manard"
+    }
+    ]
+  },
   {
     "line": "The Resurgence",
     "date": "Fall 18",
@@ -151,18 +190,18 @@
   {
     "line": "The Overwatch",
     "date": "Spr 17",
-    "image": "",
+    "image": "/~kappachi/LineagePhotos/Spr17.png",
     "members": [
     {
-      "lineName": "",
+      "lineName": "HelioΣ",
       "name": "Robert Nisby"
     },
     {
-      "lineName": "",
+      "lineName": "PrometheuΣ",
       "name": "Corey Cantrell"
     },
     {
-      "lineName": "",
+      "lineName": "KratoΣ",
       "name": "Justin Ransom"
     }
     ]
