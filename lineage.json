@@ -86,7 +86,7 @@
   {
     "line": "The AΣylum",
     "date": "Spr 22",
-    "image": "",
+    "image": "/~kappachi/LineagePhotos/Spr22.jpg",
     "members": [
     {
       "lineName": "Σilent Hitta",
@@ -109,18 +109,18 @@
   {
     "line": "Three Kings of Disaster",
     "date": "Fall 22",
-    "image": "",
+    "image": "/~kappachi/LineagePhotos/Spr21.jpg",
     "members": [
     {
       "lineName": "Annihilation",
       "name":"Chase Woodard"
     },
     {
-      "lineName": "Destruction",
+      "lineName": "Catastrophe",
       "name": "Rodrick Tooles"
     },
     {
-      "lineName": "Catastrophe",
+      "lineName": "Destruction",
       "name": "Reginald Johnson"
     }
     ]
