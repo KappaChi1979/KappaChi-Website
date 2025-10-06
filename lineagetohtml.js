@@ -17,61 +17,61 @@ fs.readFile('./lineage.json', (req, json) => {
 
 const footer = `
 
-  <!-- JS Files Start -->
-
-    <!-- Start of Footer -->
-    <footer id="footer" class="mtp">
-
-
-      <!-- Start of Footer 2 -->
-      <section class="footer_2">
-        <section class="container-fluid container">
-          <section class="row-fluid">
-
-          </section>
-        </section>
-      </section>
-      <!-- End of Footer 2 -->
-
-      <!-- Start of Footer 3 -->
-      <section class="footer_3">
-        <section class="container-fluid container">
-          <section class="row-fluid">
-
-            <figure class="col-sm-6 footer_left">
-
-              <ul class="footer_nav">
-                <li><a href="/~kappachi/index.html">Home<span class="sr-only">(current)</span></a></li>
-                <li><a href="/~kappachi/fraternity/index.html">The Fraternity<span class="sr-only"></span></a></li>
-                <li><a href="/~kappachi/chapter/index.html">The Chapter<span class="sr-only"></span></a></li>
-                <li><a href="/~kappachi/programs/index.html">Programs</a></li>
-                <li><a href="index">Lineage</a></li>
-                <li><a href="/~kappachi/membership/index.html">Membership</a></li>
-              </ul>
-
-            </figure>
-
-
-            <figure class="col-sm-4 text-right">
-              <table class="table">
-                <caption class="text-center">Get in Touch!</caption>
-                <tr>
-                  <td> <a href="https://twitter.com/sigmas_kx" class="s5"> Twitter</a> </td>
-                  <td> <a href="https://www.instagram.com/utk_sigmas/" class="s2"> Instagram</a> </td>
-                  <td> <a href="https://www.facebook.com/Kappa-Chi-Chapter-of-Phi-Beta-Sigma-161772227266905/?fref=ts" class="s1"> Facebook</a> </td>
-                  <td> <a href="mailto:kappachi1979@gmail.com" class="s1"> Email</a> </td>
-                </tr>
-              </table>
-            </figure>
-          </section>
-        </section>
-      </section>
-      <!-- End of Footer 3 -->
-
-    </footer>
-    <!-- End of Footer -->
-  </div>
   <!-- End Main Wrapper -->
+
+  <!-- Start of Footer -->
+  <footer id="footer" class="mtp">
+
+
+    <!-- Start of Footer 2 -->
+    <section class="footer_2">
+      <section class="container-fluid container">
+        <section class="row-fluid">
+
+        </section>
+      </section>
+    </section>
+    <!-- End of Footer 2 -->
+
+    <!-- Start of Footer 3 -->
+    <section class="footer_3">
+      <section class="container-fluid container">
+        <section class="row-fluid">
+
+          <figure class="col-sm-6 footer_left">
+
+            <ul class="footer_nav">
+              <li><a href="/~kappachi/index.html">Home<span class="sr-only">(current)</span></a></li>
+              <li><a href="/~kappachi/fraternity/index.html">The Fraternity<span class="sr-only"></span></a></li>
+              <li><a href="/~kappachi/chapter/index.html">The Chapter<span class="sr-only"></span></a></li>
+              <li><a href="/~kappachi/programs/index.html">Programs</a></li>
+              <li><a href="index">Lineage</a></li>
+              <li><a href="/~kappachi/membership/index.html">Membership</a></li>
+            </ul>
+
+          </figure>
+
+
+          <figure class="col-sm-4 text-right">
+            <table class="table">
+              <caption class="text-center">Get in Touch!</caption>
+              <tr>
+                <td> <a href="https://twitter.com/sigmas_kx" class="s5"> Twitter</a> </td>
+                <td> <a href="https://www.instagram.com/utk_sigmas/" class="s2"> Instagram</a> </td>
+                <td> <a href="https://www.facebook.com/Kappa-Chi-Chapter-of-Phi-Beta-Sigma-161772227266905/?fref=ts" class="s1"> Facebook</a> </td>
+                <td> <a href="mailto:kappachi1979@gmail.com" class="s1"> Email</a> </td>
+              </tr>
+            </table>
+          </figure>
+        </section>
+      </section>
+    </section>
+    <!-- End of Footer 3 -->
+
+  </footer>
+  <!-- End of Footer -->
+</div>
+  
 
   <!-- JS Files Start -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
