@@ -164,13 +164,11 @@ body{ background:url('/~kappachi/images/bg_main.png') top center repeat;}
 }
 
 /** Navigation **/
-@media (min-width: 768px) {
-  .navbar-nav.center {
-    float: none;
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed;
-  }
+.navbar-nav.center {
+	float: none;
+	margin: 0 auto;
+	display: table;
+	table-layout: fixed;
 }
 .navbar-inverse {
   background: linear-gradient(135deg, #1453a0 0%, #1f5490 100%);
