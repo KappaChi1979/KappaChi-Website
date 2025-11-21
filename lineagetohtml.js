@@ -212,6 +212,7 @@ const header = `
               <li><a href="/~kappachi/membership/index.html">Membership</a></li>
               <!--<li><a href="/~kappachi/newsletter/index.html">Newsletter</a></li>-->
               <li><a href="/~kappachi/donations/index.html">Donations</a></li>
+              <li><a href="/~kappachi/stompfest/index.html">Stompfest</a></li>
             </ul>
           </div>
           <!-- /.navbar-collapse -->
