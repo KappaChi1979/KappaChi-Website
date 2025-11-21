@@ -159,6 +159,84 @@ const header = `
   <!-- skins -->
   <!-- end of Color Switcher -->
 
+  <style>
+/* Lineage Header Styles */
+.lineage-header {
+  background: linear-gradient(135deg, #1453a0 0%, #026ec6 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.lineage-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 50px,
+      rgba(255, 255, 255, 0.03) 50px,
+      rgba(255, 255, 255, 0.03) 51px
+    );
+  opacity: 0.5;
+}
+
+.lineage-title {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.lineage-subtitle {
+  font-size: 1.3em;
+  color: rgba(255, 255, 255, 0.95);
+  position: relative;
+  z-index: 1;
+  font-style: italic;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .lineage-title {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+  }
+  
+  .lineage-subtitle {
+    font-size: 1.1em;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lineage-header {
+    padding: 40px 15px;
+  }
+  
+  .lineage-title {
+    font-size: 2em;
+  }
+  
+  .lineage-subtitle {
+    font-size: 1em;
+  }
+}
+</style>
+
 </head>
 
 <body>
@@ -222,7 +300,11 @@ const header = `
       <!-- End Main Nav Bar -->
     </header>
     <!-- End of Header -->
-<section id="cd-timeline" class="cd-container">
+
+<div class="lineage-header">
+  <h1 class="lineage-title">Lineage</h1>
+  <p class="lineage-subtitle">A Legacy of Brotherhood Since 1979</p>
+</div>
 
 `
 function html1(json) {
