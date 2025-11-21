@@ -52,6 +52,35 @@
 
 </head>
 
+<style>
+
+  .sigma-header {
+    background: linear-gradient(135deg, #1453a0 0%, #026ec6 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sigma-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100"><text y="83" font-size="100" fill="rgba(255,255,255,0.2)">Φ Β Σ</text></svg>') no-repeat;
+    animation: slide 30s linear infinite;
+  }
+
+  @keyframes slide {
+    0% { transform: translate(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+</style>
+
 <body>
   <!-- Start Main Wrapper -->
   <div class="wrapper">
@@ -132,6 +161,10 @@
     <!--End of Homecoming Banner-->
 
     <!-- Start of Header Banner -->
+    <div class="sigma-header">
+      <h1 class="sigma-title">Kappa Chi Chapter</h1>
+      <p class="sigma-subtitle">Phi Beta Sigma Fraternity, Inc. • University of Tennessee</p>
+    </div>
     <div class=" col-xs-offset-2 col-xs-8">
       <section class="banner_slider mbtm">
         <ul id="banner_slider">

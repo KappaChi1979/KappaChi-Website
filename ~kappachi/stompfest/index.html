@@ -46,7 +46,8 @@
   <!-- skins -->
   <!-- end of Color Switcher -->
 
-  <style>
+
+    <style>
     /* Responsive base styles */
     * {
       box-sizing: border-box;
@@ -58,19 +59,21 @@
       padding: 60px 20px;
       text-align: center;
       margin-bottom: 40px;
-      position: relative;
-      overflow: hidden;
     }
 
-    .stompfest-header::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100"><text y="83" font-size="100" fill="rgba(255,255,255,0.2)">Φ Β Σ</text></svg>') no-repeat;
-      animation: slide 30s linear infinite;
+    .stompfest-title {
+      font-size: 3.5em;
+      font-weight: bold;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .stompfest-subtitle {
+      font-size: 1.5em;
+      color: white;
     }
 
     @keyframes slide {
@@ -402,7 +405,7 @@
             <div class="achievement-year">2025</div>
             <div class="achievement-item">
               <div class="videoWrapper">
-                <iframe width="560" height="315" src="https://youtu.be/gUXtn6B9vlU" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gUXtn6B9vlU?si=3LT2M9wv86K1w0ex" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
               <div class="achievement-event" style="margin-top: 15px; text-align: center;">UT Homecoming StepShow 2025</div>
               <p style="margin-top: 10px; color: #666; text-align: center;">
